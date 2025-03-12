@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  background-color: #1f2a37;
 }
 .custom-shadow{
   box-shadow: 1px 1px 7px 0px rgb(199 199 199 / 97%);
