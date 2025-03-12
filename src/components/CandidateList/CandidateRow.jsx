@@ -21,14 +21,24 @@ const CandidateRow = ({ candidate }) => {
 
   return (
     <tr 
-      className="hover:bg-gray-50 cursor-pointer"
+      className="hover:bg-gray-50 cursor-pointer flex flex-col sm:table-row"
       onClick={() => navigate(`/candidate/${candidate.id}`)}
     >
-      <td className="p-4">{candidate.name}</td>
-      <td className="p-4">{candidate.email}</td>
-      <td className="p-4">{candidate.position}</td>
-      <td className="p-4">
-        <span className={`px-3 py-1 rounded text-sm ${getStatusStyle(candidate.status)}`}>
+      <td className="p-2 sm:p-4 text-sm sm:text-base">
+        <span className="sm:hidden font-bold mr-2">Name:</span>
+        {candidate.name}
+      </td>
+      <td className="p-2 sm:p-4 text-sm sm:text-base">
+        <span className="sm:hidden font-bold mr-2">Email:</span>
+        {candidate.email}
+      </td>
+      <td className="p-2 sm:p-4 text-sm sm:text-base">
+        <span className="sm:hidden font-bold mr-2">Position:</span>
+        {candidate.position}
+      </td>
+      <td className="p-2 sm:p-4">
+        <span className="sm:hidden font-bold mr-2">Status:</span>
+        <span className={`px-2 sm:px-3 py-1 rounded text-xs sm:text-sm  ${getStatusStyle(candidate.status)}`}>
           {candidate.status}
         </span>
       </td>
