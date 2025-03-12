@@ -30,7 +30,7 @@ const CandidateDetail = () => {
           </div>
         </div>
         
-        <div className="flex gap-4 sm:gap-[230px] w-full sm:w-auto justify-between sm:justify-end">
+        <div className="flex gap-4 sm:gap-[235px] w-full sm:w-auto justify-between sm:justify-end">
           <a 
             href={candidate.resume} 
             download
