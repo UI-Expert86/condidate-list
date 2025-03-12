@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
     <div className="w-10 sm:w-60 bg-[#1f2a37] h-screen h-[100%]">
       <NavLink 
-        to="/" 
+        to="#" 
         className='bg-[#1f2a37] text-white flex items-center gap-2 p-3 sm:p-4 text-sm sm:text-base'
       >
         <svg className="w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
